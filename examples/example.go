@@ -3,7 +3,7 @@ package main
 import (
 	"fmt"
 
-	"github.com/serge1peshcoff/selenium-go-conditions"
+	"github.com/quan-to/selenium-go-conditions"
 	"github.com/tebeka/selenium"
 )
 

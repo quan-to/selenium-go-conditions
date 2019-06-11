@@ -4,7 +4,7 @@ import (
 	"testing"
 	"time"
 
-	conditions "github.com/serge1peshcoff/selenium-go-conditions"
+	conditions "github.com/quan-to/selenium-go-conditions"
 )
 
 func TestURLIs(t *testing.T) {

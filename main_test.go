@@ -2,13 +2,13 @@ package conditions_test
 
 import (
 	"fmt"
+	"github.com/tebeka/selenium"
 	"io/ioutil"
 	"net/http"
 	"os"
 	"os/exec"
 	"testing"
 	"time"
-	"github.com/tebeka/selenium"
 )
 
 var cmd *exec.Cmd
@@ -30,7 +30,6 @@ func TestMain(m *testing.M) {
 		fmt.Printf("Error staring remote.\n")
 		panic(err)
 	}
-
 
 	retCode := m.Run()
 

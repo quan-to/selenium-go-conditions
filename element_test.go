@@ -4,7 +4,7 @@ import (
 	"testing"
 	"time"
 
-	conditions "github.com/serge1peshcoff/selenium-go-conditions"
+	conditions "github.com/quan-to/selenium-go-conditions"
 	"github.com/tebeka/selenium"
 )
 
@@ -146,7 +146,7 @@ func TestElementTextIs(t *testing.T) {
 	}
 
 	// This should raise an timeout error.
-	if err = wd.WaitWithTimeout(conditions.ElementTextIs(element, "Another page."), 500 * time.Millisecond); err == nil {
+	if err = wd.WaitWithTimeout(conditions.ElementTextIs(element, "Another page."), 500*time.Millisecond); err == nil {
 		t.Fatalf("Error while executing wd.Wait(): %v\n", err)
 	}
 }
@@ -178,7 +178,7 @@ func TestElementTextContains(t *testing.T) {
 	}
 
 	// This should raise an timeout error.
-	if err = wd.WaitWithTimeout(conditions.ElementTextContains(element, "Another"), 500 * time.Millisecond); err == nil {
+	if err = wd.WaitWithTimeout(conditions.ElementTextContains(element, "Another"), 500*time.Millisecond); err == nil {
 		t.Fatalf("Error while executing wd.Wait(): %v\n", err)
 	}
 }
@@ -210,7 +210,7 @@ func TestElementAttributeIs(t *testing.T) {
 	}
 
 	// This should raise an timeout error.
-	if err = wd.WaitWithTimeout(conditions.ElementAttributeIs(element, "data", "Another data."), 500 * time.Millisecond); err == nil {
+	if err = wd.WaitWithTimeout(conditions.ElementAttributeIs(element, "data", "Another data."), 500*time.Millisecond); err == nil {
 		t.Fatalf("Error while executing wd.Wait(): %v\n", err)
 	}
 }
